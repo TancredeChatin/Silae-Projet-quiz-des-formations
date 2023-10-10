@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: gray;
+    font-size: 200%;
+
+}
+
+.animation-container {
+    text-align: center;
+}
+
+.text {
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    animation: reveal-text 2s ease-in-out forwards;
+}
+
+.text-delay_1 {
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    animation: reveal-text 2s ease-in-out forwards;
+    animation-delay: 2s; /* Délai de 3 secondes avant le démarrage de l'animation */
+}
+
+.text-delay_2 {
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    animation: reveal-text 2s ease-in-out forwards;
+    animation-delay: 4s; /* Délai de 3 secondes avant le démarrage de l'animation */
+}
+
+.text-delay_3 {
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    animation: reveal-text 2s ease-in-out forwards;
+    animation-delay: 6s; /* Délai de 3 secondes avant le démarrage de l'animation */
+}
+
+.text-delay_4 {
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    animation: reveal-text 2s ease-in-out forwards;
+    animation-delay: 8s; /* Délai de 3 secondes avant le démarrage de l'animation */
+}
+
+table {
+    border-collapse: separate; /* Utilisation de separate au lieu de collapse */
+    width: 100%;
+}
+
+.cellule {
+    display: flex; /* Utilisation d'une disposition flexible */
+    justify-content: space-between; /* Afficher les éléments en colonne */
+    align-items: flex-start; /* Aligner le contenu verticalement à gauche */
+}
+
+th{
+    width: 50%;
+}
+
+@keyframes reveal-text {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Style du bouton*/
+.BouttonLancementQuiz {
+    /* Ajoutez les styles de votre choix ici */
+    background-color: #e94c2c; /* Couleur d'arrière-plan */
+    color: #fff; /* Couleur du texte */
+    border: none; /* Supprimer la bordure */
+    padding: 1em 2em; /* Ajouter un espace intérieur (padding) pour le bouton */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    cursor: pointer; /* Changer le curseur lorsqu'il survole le bouton */
+    font-size: 1em; /* Taille de police */
+    font-weight: bold; /* Gras le texte */
+    text-decoration: none; /* Supprimer le soulignement */
+}
+
+/* Style lorsque le bouton est survolé */
+    .BouttonLancementQuiz:hover {
+        background-color: #e77159; /* Changer la couleur d'arrière-plan au survol */
+    }
+
+
+    /* Animation de sortie pour la première page (lors de la navigation) */
+.page-transition-out {
+    animation: fade-out 1s ease-in-out;
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
