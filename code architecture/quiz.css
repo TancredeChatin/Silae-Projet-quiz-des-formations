@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif; /*police d'ecriture*/
+    text-align: center; /*position du texte*/
+    margin: 20px; /*deplacement de 20 pixel*/
+    overflow: hidden; /* Empêcher le défilement */
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#questionContainer, #resultContainer {
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 24px; /* Taille de la police pour la question */
+    margin-bottom: 20px; /* Espacement en bas de la question */
+    white-space: nowrap; /* Empêcher le retour à la ligne pour les questions uniquement */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e94c2c; /* Couleur du bouton par défaut */
+    color: #fff; /* Couleur du texte par défaut */
+    border: none;
+}
+
+button:hover {
+    background-color: #e77159; /* Couleur du bouton au survol avec la souris */
+}
+
+label {
+    display: block;
+    padding: 8px;
+    margin: 8px;
+    border: 2px solid #e94c2c; /* Couleur du cadre par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+    background-color: transparent;
+    width: 100%; /* Les cadres des réponses prendront 100% de la largeur disponible */
+    box-sizing: border-box; /* Inclure les bordures dans la largeur pour éviter le débordement */
+}
+
+label:hover {
+    border-color: #e77159; /* Couleur du cadre au survol avec la souris */
+}
+
+label.selected {
+    background-color: #e94c2c;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    display: none; /* Masque les cases à cocher par défaut */
+}
+
+input[type="radio"] {
+    display: none; /* Masque les cases à cocher par défaut */
+}
+
+
+input[type="checkbox"]:checked + label {
+    background-color: #e94c2c; /* Couleur de fond lorsque le cadre est sélectionné */
+    color: #fff; /* Couleur du texte lorsque sélectionné */
+    border-color: #e94c2c; /* Couleur de la bordure lorsque sélectionné */
+}
+
+label.selected {
+    background-color: #e94c2c; /* Couleur de fond lorsque le cadre est sélectionné */
+    color: #fff; /* Couleur du texte lorsque sélectionné */
+    border-color: #e94c2c; /* Couleur de la bordure lorsque sélectionné */
+}
+
+/* Ajout de la couleur #e94c2c lorsque les réponses sont survolées avec la souris */
+label:hover {
+    background-color: #e94c2c;
+    color: #fff;
+}
+
+#answerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; /* Centrer les éléments horizontalement */
+    margin-top: 10px;
+    width: calc(100% - 40px); /* Calcul de la largeur en soustrayant l'espace occupé par les boutons */
+    margin-left: 20px; /* Marge à gauche de 20px pour centrer les réponses sur la longueur */
+    margin-right: 20px; /* Marge à droite de 20px pour centrer les réponses sur la longueur */
+}
+
+#buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Augmenter la marge entre les boutons */
+}
+
+
+/*min-height: 100vh; bloque le resultat final mais si on l'enleve on voit Résultats : pendant le quiz*/
+#questionContainer {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+    /*min-height: 100vh; /* Assurez-vous que le conteneur occupe au moins la hauteur de la vue */
+}
+
+
+/* Ajustement de la flexibilité des boutons pour qu'ils aient la même longueur */
+#nextBtn, #abandonBtn {
+    flex: 1;
+    width: 150px; /* Largeur fixe des boutons (vous pouvez ajuster cette valeur selon vos besoins) */
+}
+
+/* Centrer horizontalement les boutons dans le conteneur */
+#buttonsContainer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajout d'une marge à droite pour le bouton "Suivant" et d'une marge à gauche pour le bouton "Abandonner" */
+#nextBtn {
+    margin-right: 10px;
+}
+
+#abandonBtn {
+    margin-left: 10px;
+}
