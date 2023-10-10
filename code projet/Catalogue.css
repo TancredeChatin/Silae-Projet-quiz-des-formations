@@ -1,0 +1,171 @@
+/*Logo Silae*/
+    .imgSilae img{
+        width: 40%;
+        height: 20%;
+    }
+
+    .imgSilae{
+        text-align: center;
+    }
+
+
+/*Police d'ecriture*/
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+/*dimension des images*/
+    .imgLogo{
+        padding-bottom: 10px;
+        width: 50%;
+        height: 50%;
+    }
+
+    .imgQuizGeneral{
+        padding-bottom: 10px;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .imgQuiz{
+        padding-bottom: 10px;
+        width: 80%;
+        height: 80%;
+    }
+
+
+.QuizGeneral{
+    padding: 10px; /* Ajout d'un padding pour l'espace entre le contenu et la bordure */
+    width: 70%; /*Taille de la cellules*/
+    margin: 0 auto; /*position de la cellule*/
+}
+
+/*Interligne/espace*/
+    .QuizSpecifique{
+        line-height: 120%;
+    }
+
+
+/*Largeur du tableau et espace entre les cellules*/
+    table {
+        border-collapse: separate; /* Utilisation de separate au lieu de collapse */
+        border-spacing: 10px; /*espace entre les cellules*/
+        width: 100%;
+    }
+
+
+/*Bordure des cellules (couleur et marge avec le contenue)*/
+    th, td {
+        border: 1px solid black;
+        padding: 8px; /*espace entre le contenu et le cadre*/
+        padding-bottom: 20px;
+    }
+
+    .cellule {
+        display: flex; /* Utilisation d'une disposition flexible */
+        justify-content: space-between; /* Afficher les éléments en colonne */
+        align-items: flex-start; /* Aligner le contenu verticalement à gauche */
+    }
+
+/*taille des cellule*/
+    /* Style pour le premier contenu (titre et texte) */
+        .cellule .contenu:first-child {
+            flex: 2; /* Utiliser 2 parts de l'espace disponible */
+        }
+
+    /* Style pour le deuxième contenu (image et bouton) */
+        .cellule .contenu:last-child {
+            flex: 1; /* Utiliser 1 part de l'espace disponible */
+        }
+
+/*Positionnement de contenue*/ 
+    /*tout dans le tableau*/
+        th{
+            text-align: right;
+            width: 33.33%;
+        }
+
+    /*Uniquement le texte*/   
+        p.TexteQuiz{
+            text-align: left;
+            text-align: justify;
+        }
+        
+    /*Uniquement le titre*/
+        h2{
+            text-align: left;
+        }
+
+        
+
+/*Boutton de lancement de Quiz*/
+    /*Style du bouton*/
+    .BouttonLancementQuiz {
+        /* Ajoutez les styles de votre choix ici */
+        background-color: #e94c2c; /* Couleur d'arrière-plan */
+        color: #fff; /* Couleur du texte */
+        border: none; /* Supprimer la bordure */
+        padding: 5%;
+        border-radius: 5px; /* Ajouter des coins arrondis */
+        cursor: pointer; /* Changer le curseur lorsqu'il survole le bouton */
+        font-size: 1em; /* Taille de police */
+        font-weight: bold; /* Gras le texte */
+        margin-right: 10%;
+        text-decoration: none; /* Supprimer le soulignement */
+    }
+
+    /* Style lorsque le bouton est survolé */
+        .BouttonLancementQuiz:hover {
+            background-color: #e77159; /* Changer la couleur d'arrière-plan au survol */
+        }
+
+    /*Style du bouton general*/
+    .BouttonLancementQuizGeneral {
+            /* Ajoutez les styles de votre choix ici */
+            background-color: #e94c2c; /* Couleur d'arrière-plan */
+            color: #fff; /* Couleur du texte */
+            border: none; /* Supprimer la bordure */
+            padding: 3%;
+            border-radius: 5px; /* Ajouter des coins arrondis */
+            cursor: pointer; /* Changer le curseur lorsqu'il survole le bouton */
+            font-size: 1em; /* Taille de police */
+            font-weight: bold; /* Gras le texte */
+            margin-right: 10%;
+            text-decoration: none; /* Supprimer le soulignement */
+        }
+        
+    /* Style lorsque le bouton est survolé */
+    .BouttonLancementQuizGeneral:hover {
+        background-color: #e77159; /* Changer la couleur d'arrière-plan au survol */
+    }
+
+
+
+.sousTitre{
+    font-style: italic;
+    max-width: 50%;
+    margin: 0 auto; /* Centrer le paragraphe horizontalement */
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding: 7%;
+    text-align: left;
+    margin-top: -10%;
+}
+li {
+    margin-top: 5%;
+}
+
+.sub-list {
+    margin-left: 10%;
+    margin-top: -10%;
+    list-style-type: none; /* Supprimer les puces pour les sous-éléments */
+}
+
+.sub-list li::before {
+    content: "-"; /* Symbole personnalisé pour les sous-éléments */
+    margin-right: 5px; /* Espacement entre le symbole et le texte */
+}
