@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramétrage avancé Niv2</title>
+    <link rel="stylesheet" href="Quiz_PAAV_Niv2.css" type="text/css">
+    <link rel="shortcut icon" href="../../Image/Logo Silae Academie chapeau.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Paramétrage avancé Niv2</h1>
+        <button id="startBtn">Commencer le quiz</button>
+        <div id="questionContainer" class="hidden">
+            <p id="question"></p>
+            <p id="questionTypeText"></p>
+            <form id="answerForm">
+                <!-- Les réponses sont générées dynamiquement via JavaScript -->
+            </form>
+            <div id="buttonsContainer">
+                <button type="button" id="nextBtn">Suivant</button>
+                <button type="button" id="abandonBtn">Abandonner</button>
+            </div>
+        </div>
+        <div id="resultContainer" class="hidden">
+            <h2>Résultats :</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="Quiz_PAAV_Niv2.js"></script>
+</body>
+</html>
